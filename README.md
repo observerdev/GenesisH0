@@ -42,7 +42,10 @@ Create the original genesis hash found in DarkCoin. (requires [xcoin-hash](https
 Create the original genesis hash found in HiroCoin (requires [xcoin-hash](https://github.com/lhartikk/xcoin-hash)).
 
     python genesis.py -a X11 -z "JapanToday 13/Mar/2014 Ways eyed to make planes easier to find in ocean" -p "040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9" -n 1234746574 -t 1394723131 -v 40000000000
-    
+
+Create the original genesis hash found in OBSR (requires [quark-hash](https://github.com/Neisklar/quarkcoin-hash-python)).
+
+    python genesis.py -a quark -z "The NYT - Hawaii Braces for a Rare Encounter With a Hurricane" -t 1535180090 -b 0x1e0ffff0 -p "04079ebf2ae7a2041f67acbaec5b31c72f09fa6b5a4c04a012cf3344ee0475aa43625d6e161d50de26a38ec227cb559eeaf4dbc8138e1c3ea536ddf1607d4d8c7c" -n 32057208 -t 1533686511 -v 100000000
 
 
 ### Options
@@ -57,7 +60,7 @@ Create the original genesis hash found in HiroCoin (requires [xcoin-hash](https:
          the first value of the nonce that will be incremented
          when searching the genesis hash
       -a ALGORITHM, --algorithm=ALGORITHM
-         the PoW algorithm: [SHA256|scrypt|X11|X13|X15]
+         the PoW algorithm: [SHA256|scrypt|X11|X13|X15|quark]
       -p PUBKEY, --pubkey=PUBKEY
          the pubkey found in the output script
       -v VALUE, --value=VALUE
